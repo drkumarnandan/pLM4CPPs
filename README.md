@@ -16,10 +16,10 @@ Protocols for predicting the activity of new peptides
 You can access the pLM4CPPs web server to predict CPP activity at: https://ry2acnp6ep.us-east-1.awsapprunner.com
 
 ## Usage
-1. Embedding Generation: Utilize the provided scripts to generate embeddings for your peptide sequences.
-2. Model Training: Use the Jupyter notebooks to train the models with your datasets.
-3. Evaluation: Evaluate the performance of the models using the provided datasets and protocols.
-4. Prediction: Follow the protocols to predict the activity of new peptides using the pre-trained pLM4CPPs models.
+**1. Embedding Generation:** Utilize the provided scripts to generate embeddings for your peptide sequences.
+**2. Model Training:** Use the Jupyter notebooks to train the models with your datasets.
+**3. Evaluation:** Evaluate the performance of the models using the provided datasets and protocols.
+**4. Prediction:** Follow the protocols to predict the activity of new peptides using the pre-trained pLM4CPPs models.
 
 ## Directory Structure
 - **`dataset/`**: Contains datasets for training and evaluation.
@@ -61,6 +61,8 @@ You can access the pLM4CPPs web server to predict CPP activity at: https://ry2ac
 2. Replace `Final_non_redundant_sequences.xlsx` with your dataset file.
 3. Run the notebook to generate embeddings.
 4. Save the output as `user_dataset_esm2_t6_8M_UR50D_unified_320_dimension.csv`.
+
+*Note:* The embeddings are produced using the ESM2-320 model, an advanced protein language model developed by Facebook AI Research (FAIR). The ESM2-320 model generates 320-dimensional embeddings that encapsulate evolutionary features of protein sequences. For embeddings from alternative models, the relevant Jupyter notebooks (.ipynb) are available in the **`embedded_data/`** directory.*
 
 ### Making Predictions
 Use the following Python script to make predictions:
