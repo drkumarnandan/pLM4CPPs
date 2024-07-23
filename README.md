@@ -91,5 +91,7 @@ How to interpret the results:
 The `predictions.csv` file will contain the following columns:
 - `Prediction`: `1` for Cell Penetrating Peptides and `0` for Non-Cell Penetrating Peptides.
 
+If the model is missing, users can train it using the provided code and then use it for predictions.
+
 8. License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
