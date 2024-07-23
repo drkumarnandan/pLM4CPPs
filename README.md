@@ -80,3 +80,16 @@ predictions_df = pd.DataFrame(predicted_classes_ext, columns=['Prediction'])
 predictions_df.to_csv('predictions.csv', index=False)
 
 print("Predictions have been saved to 'predictions.csv'.")
+
+
+
+```markdown
+Results:
+
+How to interpret the results:
+
+The `predictions.csv` file will contain the following columns:
+- `Prediction`: `1` for Cell Penetrating Peptides and `0` for Non-Cell Penetrating Peptides.
+
+8. License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
