@@ -13,13 +13,13 @@ Tools for embedding generation
 Protocols for predicting the activity of new peptides
 
 ## Web Server
-You can access the pLM4CPPs web server to predict CPP activity at: pLM4CPPs Web Server
+You can access the pLM4CPPs web server to predict CPP activity at: https://ry2acnp6ep.us-east-1.awsapprunner.com/predict
 
 ## Usage
-Embedding Generation: Utilize the provided scripts to generate embeddings for your peptide sequences.
-Model Training: Use the Jupyter notebooks to train the models with your datasets.
-Evaluation: Evaluate the performance of the models using the provided datasets and protocols.
-Prediction: Follow the protocols to predict the activity of new peptides using the pre-trained pLM4CPPs models.
+1. Embedding Generation: Utilize the provided scripts to generate embeddings for your peptide sequences.
+2. Model Training: Use the Jupyter notebooks to train the models with your datasets.
+3. Evaluation: Evaluate the performance of the models using the provided datasets and protocols.
+4. Prediction: Follow the protocols to predict the activity of new peptides using the pre-trained pLM4CPPs models.
 
 ## Directory Structure
 - **`dataset/`**: Contains datasets for training and evaluation.
