@@ -1,4 +1,4 @@
-# pLM4CPPs
+# pLM4CPPs *Protein Language Model-Based Predictor for Cell Penetrating Peptides*
 
 pLM4CPPs predicts cell-penetrating peptides (CPPs) using deep learning and protein language models. It integrates CNNs for feature extraction, achieving high accuracy and reliability. The implementation is based on Kumar et al., J. Chem. Inf. Model. 2024 (Submitted).
 
