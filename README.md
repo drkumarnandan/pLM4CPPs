@@ -1,9 +1,25 @@
 # pLM4CPPs
 
-pLM4CPPs predicts cell-penetrating peptides (CPPs) using deep learning and protein language models. It integrates CNNs for feature extraction, achieving high accuracy and reliability. The implementation is based on Kumar et al., 2024 (Submitted).
+pLM4CPPs predicts cell-penetrating peptides (CPPs) using deep learning and protein language models. It integrates CNNs for feature extraction, achieving high accuracy and reliability. The implementation is based on Kumar et al., J. Chem. Inf. Model. 2024 (Submitted).
 
 ## Overview
-This repository contains pre-trained models, datasets, and Jupyter notebooks for predicting CPPs. It provides tools for embedding generation, model training, and evaluation.
+This repository includes pre-trained models, datasets, and Jupyter notebooks for predicting Cell Penetrating Peptides (CPPs). It provides resources for embedding generation, model training, evaluation, and protocols for predicting the activity of new peptides using pLM4CPPs models.
+
+## Features
+Pre-trained models for CPP prediction
+Datasets for training and evaluation
+Jupyter notebooks for replicating experiments and model training
+Tools for embedding generation
+Protocols for predicting the activity of new peptides
+
+## Web Server
+You can access the pLM4CPPs web server to predict CPP activity at: pLM4CPPs Web Server
+
+## Usage
+Embedding Generation: Utilize the provided scripts to generate embeddings for your peptide sequences.
+Model Training: Use the Jupyter notebooks to train the models with your datasets.
+Evaluation: Evaluate the performance of the models using the provided datasets and protocols.
+Prediction: Follow the protocols to predict the activity of new peptides using the pre-trained pLM4CPPs models.
 
 ## Directory Structure
 - **`dataset/`**: Contains datasets for training and evaluation.
@@ -33,7 +49,8 @@ This repository contains pre-trained models, datasets, and Jupyter notebooks for
 - **`whole_sample_dataset_esm2_t30_150M_UR50D_unified_640_dimension.csv`**: ESM2 640-dimensional embeddings.
 - **`whole_sample_dataset_esm2_t33_650M_UR50D_unified_1280_dimension.csv`**: ESM2 1280-dimensional embeddings.
 
-## Usage
+
+## How to use it
 
 ### Preparing Your Data
 1. Save your peptide sequences in an XLSX file named `user.xlsx`.
