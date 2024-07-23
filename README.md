@@ -55,7 +55,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 
 # Load the trained model
-saved_model = load_model('models/ESM2-320/model_file.h5')
+saved_model = load_model('models/ESM2-320/best_model_320.h5')
 
 # Load the user's dataset
 dataset_external = pd.read_excel('user.xlsx', na_filter=False)
@@ -79,7 +79,7 @@ predicted_classes_ext = (predicted_probas_ext > 0.5).astype(int)
 predictions_df = pd.DataFrame(predicted_classes_ext, columns=['Prediction'])
 predictions_df.to_csv('predictions.csv', index=False)
 
-print("Predictions have been saved to 'predictions.csv'.")
+print("Predictions have been saved to 'predictions.csv'.")```
 
 
 
