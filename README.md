@@ -40,7 +40,7 @@ This repository contains pre-trained models, datasets, and Jupyter notebooks for
 2. Ensure the file contains a column named `sequence` with your peptide sequences.
 
 ### Generating Embeddings
-1. Open `scripts/ESM2_320_embeddings.ipynb`.
+1. Open `notebooks/ESM2_320_embeddings.ipynb`.
 2. Replace `Final_non_redundant_sequences.xlsx` with your dataset file.
 3. Run the notebook to generate embeddings.
 4. Save the output as `user_dataset_esm2_t6_8M_UR50D_unified_320_dimension.csv`.
@@ -48,10 +48,10 @@ This repository contains pre-trained models, datasets, and Jupyter notebooks for
 ### Making Predictions
 Use the following Python script to make predictions:
 
-Note: This script will output the `predictions.csv` file that will contain the following columns:
+Note: This script will output a predictions.csv file containing the following columns:
 - `Prediction`: `1` for Cell Penetrating Peptides and `0` for Non-Cell Penetrating Peptides.
 
-If the model is missing, users can train it using the provided code and then use it for predictions.
+If the model is missing, users can train it using the provided code in **`notebooks/`** and then use it for predictions.
 
 
 ```python
