@@ -1,0 +1,9 @@
+global:
+  sequences_file: Final_non_redundant_sequences_deeploc_data.fasta
+  prefix: deeploc_embeddings
+  simple_remapping: True
+
+prottrans_bert_embeddings:
+  type: embed
+  protocol: seqvec
+  reduce: true
