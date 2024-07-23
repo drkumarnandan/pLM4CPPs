@@ -44,8 +44,8 @@ You can access the pLM4CPPs web server to predict CPP activity at: https://ry2ac
 - **`kelm_dataset_CPP.csv`** and **`kelm_dataset_Non-CPP.csv`**: Independent datasets for evaluation.
 
 ## Embedded Data
-- **`Final_non_redundant_sequences.xlsx`**: Non-redundant sequences dataset.
-- **`kelm_dataset.csv`**: KELM dataset with embeddings.
+- **`Final_non_redundant_sequences.xlsx`**: Non-redundant sequences dataset used for training and testing.
+- **`kelm_dataset.csv`**: Independent dataset used for evaluation.
 - **`prot_t5_xl_bfd_per_protein_embeddings.csv`**: Prot-T5 embeddings with BFD.
 - **`seqvec_whole_sample_reduced_embeddings_file_ordered.csv`**: SeqVec embeddings.
 - **`whole_sample_dataset_esm2_t12_35M_UR50D_unified_480_dimension.csv`**: ESM2 480-dimensional embeddings.
