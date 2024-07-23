@@ -62,7 +62,7 @@ You can access the pLM4CPPs web server to predict CPP activity at: https://ry2ac
 3. Run the notebook to generate embeddings.
 4. Save the output as `user_dataset_esm2_t6_8M_UR50D_unified_320_dimension.csv`.
 
-*Note:* The embeddings are produced using the ESM2-320 model, an advanced protein language model developed by Facebook AI Research (FAIR). The ESM2-320 model generates 320-dimensional embeddings that encapsulate evolutionary features of protein sequences. For embeddings from alternative models, the relevant Jupyter notebooks (.ipynb) are available in the **`embedded_data/`** directory.*
+*Note:* The embeddings are produced using the ESM2-320 model, an advanced protein language model developed by Facebook AI Research (FAIR). The ESM2-320 model generates 320-dimensional embeddings that encapsulate evolutionary features of protein sequences. For embeddings from alternative models, the relevant Jupyter notebooks (.ipynb) are available in the **`embedded_data/`** directory.
 
 ### Making Predictions
 Use the following Python script to make predictions:
