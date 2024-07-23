@@ -1,2 +1,9 @@
 embedded_data/*.csv filter=lfs diff=lfs merge=lfs -text
 models/*.h5 filter=lfs diff=lfs merge=lfs -text
+models/Port-T5-BFD/best_model_1024-bfd.h5 filter=lfs diff=lfs merge=lfs -text
+models/SeqVec/best_model_1024-seqvec.h5 filter=lfs diff=lfs merge=lfs -text
+embedded_data/seqvev_whole_smaple_reduced_embeddings_file_ordered.csv filter=lfs diff=lfs merge=lfs -text
+embedded_data/whole_sample_dataset_esm2_t12_35M_UR50D_unified_480_dimension.csv filter=lfs diff=lfs merge=lfs -text
+embedded_data/whole_sample_dataset_esm2_t30_150M_UR50D_unified_640_dimension.csv filter=lfs diff=lfs merge=lfs -text
+embedded_data/prot_t5_xl_bfd_per_protein_embeddings.csv filter=lfs diff=lfs merge=lfs -text
+models/ESM2-640/best_model_640.h5 filter=lfs diff=lfs merge=lfs -text
