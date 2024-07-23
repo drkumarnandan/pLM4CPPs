@@ -79,12 +79,12 @@ predicted_classes_ext = (predicted_probas_ext > 0.5).astype(int)
 predictions_df = pd.DataFrame(predicted_classes_ext, columns=['Prediction'])
 predictions_df.to_csv('predictions.csv', index=False)
 
-print("Predictions have been saved to 'predictions.csv'.")```
+print("Predictions have been saved to 'predictions.csv'.")
 
 
 
 
-#####Results:
+###Results:
 
 How to interpret the results:
 
@@ -95,3 +95,36 @@ If the model is missing, users can train it using the provided code and then use
 
 8. License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```python
+from tensorflow.keras.models import load_model
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+
+# Load the trained model
+saved_model = load_model('models/ESM2-320/best_model_320.h5')
+
+# Load the user's dataset
+dataset_external = pd.read_excel('user.xlsx', na_filter=False)
+
+# Load the embedded data
+X_external_data_name = 'user_dataset_esm2_t6_8M_UR50D_unified_320_dimension.csv'
+X_external_data = pd.read_csv(X_external_data_name, header=0, index_col=0, delimiter=',')
+X_external = np.array(X_external_data)
+
+# Normalize the external dataset
+scaler = StandardScaler().fit(X_external)  # Fit scaler on the external data if training data is not available
+X_external_normalized = scaler.transform(X_external)
+
+# Predict probabilities for external dataset
+predicted_probas_ext = saved_model.predict(X_external_normalized, batch_size=32)
+
+# Convert probabilities to class labels
+predicted_classes_ext = (predicted_probas_ext > 0.5).astype(int)
+
+# Save predictions to a CSV file
+predictions_df = pd.DataFrame(predicted_classes_ext, columns=['Prediction'])
+predictions_df.to_csv('predictions.csv', index=False)
+
+print("Predictions have been saved to 'predictions.csv'.")
