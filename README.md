@@ -1,6 +1,6 @@
 # pLM4CPPs
 
-pLM4CPPs predicts cell-penetrating peptides (CPPs) using deep learning and protein language models. It integrates CNNs for feature extraction, achieving high accuracy and reliability. The project evaluates multiple embeddings from sources like BEPLER, CPCProt, SeqVec, ESM, and ProtT5-XL. The implementation is based on Kumar et al., 2024 (Submitted).
+pLM4CPPs predicts cell-penetrating peptides (CPPs) using deep learning and protein language models. It integrates CNNs for feature extraction, achieving high accuracy and reliability. The implementation is based on Kumar et al., 2024 (Submitted).
 
 ## Overview
 This repository contains pre-trained models, datasets, and Jupyter notebooks for predicting CPPs. It provides tools for embedding generation, model training, and evaluation.
