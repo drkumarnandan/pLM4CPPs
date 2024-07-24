@@ -114,3 +114,7 @@ predictions_df = pd.DataFrame(predicted_classes_ext, columns=['Prediction'])
 predictions_df.to_csv('predictions.csv', index=False)
 
 print("Predictions have been saved to 'predictions.csv'.")
+
+
+##Help
+If you have any questions, please contact me at nandan@ksu.edu
